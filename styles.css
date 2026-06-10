@@ -1,12 +1,12 @@
-/* Premium Corporate Design System Engine */
+/* Premium Industrial Corporate Design System Engine */
 :root {
-    --primary: #0F2A4A;      /* Deep Blue - Projects corporate stability */
-    --accent: #D4AF37;       /* Refined Gold - Shows high-end excellence */
-    --accent-green: #1E6B43; /* Forest Green - For clean energy assets */
-    --dark: #11161B;         /* Slate Black */
-    --light: #F4F6F9;        /* Light Background Gray */
+    --primary: #1A222D;      /* Deep Slate Charcoal - Base for elite structural companies */
+    --accent: #E5A93C;       /* Construction Amber Gold - Highly visible executive tone */
+    --accent-green: #2A7E52; /* Emerald Safety Green - For ESG metrics */
+    --dark: #0F1318;         /* Jet Black Slate */
+    --light: #F1F4F7;        /* Architectural Light Gray */
     --white: #FFFFFF;
-    --text-muted: #7A8694;
+    --text-muted: #6B7A8D;
     --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -21,119 +21,111 @@ body { font-family: var(--font-stack); background: var(--white); color: var(--da
 
 /* Navigation and Header UI */
 .utility-bar { background-color: var(--dark); color: var(--text-muted); font-size: 0.85rem; padding: 8px 0; }
+.utility-bar span { margin-right: 20px; }
 .utility-links a { color: var(--text-muted); text-decoration: none; margin-left: 20px; }
 .utility-links a:hover { color: var(--accent); }
-.main-header { background-color: rgba(15, 42, 74, 0.98); position: sticky; top: 0; z-index: 1000; padding: 20px 0; border-bottom: 2px solid var(--accent); }
-.logo h2 { color: var(--white); letter-spacing: 2px; }
-.logo h2 span { color: var(--accent); }
+.main-header { background-color: rgba(26, 34, 45, 0.98); position: sticky; top: 0; z-index: 1000; padding: 20px 0; border-bottom: 2px solid var(--accent); }
+.logo h2 { color: var(--white); letter-spacing: 2px; font-weight: 800; }
+.logo h2 span { color: var(--accent); font-weight: 300; }
 .nav-menu a { color: var(--white); text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 0.95rem; }
 .nav-menu a:hover { color: var(--accent); }
 
 /* Buttons & Component Accents */
-.btn { padding: 12px 28px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block; border: none; }
+.btn { padding: 12px 28px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block; border: none; transition: all 0.3s ease; }
 .btn-primary { background-color: var(--accent); color: var(--dark); }
+.btn-primary:hover { background-color: var(--white); color: var(--primary); }
 .btn-secondary { border: 2px solid var(--white); color: var(--white); }
-.badge { background-color: rgba(212, 175, 55, 0.15); color: var(--accent); padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
-.badge.green { background-color: rgba(30, 107, 67, 0.15); color: var(--accent-green); }
+.btn-secondary:hover { background-color: var(--white); color: var(--dark); }
+.badge { background-color: rgba(229, 169, 60, 0.15); color: var(--accent); padding: 6px 16px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.badge.green { background-color: rgba(42, 126, 82, 0.15); color: var(--accent-green); }
 
 /* Section Layout Modules */
-.hero { background: linear-gradient(135deg, #051324 0%, #0f2a4a 100%); padding: 140px 0; color: var(--white); }
+.hero { background: linear-gradient(135deg, #090E14 0%, #1A222D 100%); padding: 140px 0; color: var(--white); }
 .hero-content { max-width: 750px; }
-.hero-content h1 { font-size: 3.2rem; margin: 20px 0; font-weight: 800; line-height: 1.2; }
-.hero-content p { font-size: 1.15rem; color: #b0c4de; margin-bottom: 40px; }
+.hero-content h1 { font-size: 3.2rem; margin: 20px 0; font-weight: 800; line-height: 1.2; letter-spacing: -0.5px; }
+.hero-content p { font-size: 1.15rem; color: #9BB0C7; margin-bottom: 40px; }
 .hero-buttons .btn { margin-right: 15px; }
 
 /* ==========================================================================
    EXECUTIVE DASHBOARD STATISTICS GRID
    ========================================================================== */
-.stats-section {
-    background-color: #f8fafc;
-    padding: 60px 0;
-    border-top: 1px solid #e2e8f0;
-    border-bottom: 1px solid #e2e8f0;
-}
-.stat-card {
-    background: var(--white);
-    padding: 35px 25px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(15, 42, 74, 0.05);
-    border-top: 4px solid var(--accent);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(15, 42, 74, 0.1);
-}
+.stats-section { background-color: #f8fafc; padding: 60px 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+.stat-card { background: var(--white); padding: 35px 25px; border-radius: 6px; text-align: center; box-shadow: 0 10px 25px rgba(26, 34, 45, 0.05); border-top: 4px solid var(--accent); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.stat-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(26, 34, 45, 0.1); }
 .stat-icon { font-size: 1.8rem; color: var(--primary); margin-bottom: 15px; }
 .stat-number { font-size: 2.4rem; font-weight: 800; color: var(--primary); line-height: 1.1; margin-bottom: 10px; letter-spacing: -0.5px; }
 .stat-label { font-size: 0.88rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.4; }
 
-/* Operations Framework Styling */
+/* Operations Framework Styling & Photography */
 .operations-section { padding: 90px 0; }
 .section-title { text-align: center; max-width: 700px; margin: 0 auto 60px; }
-.section-title h2 { font-size: 2.4rem; color: var(--primary); margin-bottom: 15px; }
-.op-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border: 1px solid #eef2f6; transition: transform 0.3s ease; }
+.section-title h2 { font-size: 2.4rem; color: var(--primary); margin-bottom: 15px; font-weight: 800; }
+.op-card { background: var(--white); border-radius: 6px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border: 1px solid #eef2f6; transition: transform 0.3s ease; }
 .op-card:hover { transform: translateY(-8px); }
-.op-img-placeholder { height: 200px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
+.op-img-placeholder { height: 220px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
 
-.upstream { 
-    background: linear-gradient(rgba(15, 42, 74, 0.45), rgba(15, 42, 74, 0.7)), 
-    url('https://images.unsplash.com/photo-1544654803-b69140b285a1?q=80&w=1200&auto=format&fit=crop') center/cover; 
+/* Ultra High-Fidelity Construction Image Embeds */
+.civic { 
+    background: linear-gradient(rgba(26, 34, 45, 0.4), rgba(26, 34, 45, 0.75)), 
+    url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop') center/cover; 
 }
-.midstream { 
-    background: linear-gradient(rgba(15, 42, 74, 0.45), rgba(15, 42, 74, 0.7)), 
-    url('https://images.unsplash.com/photo-1513828583835-c339738e6020?q=80&w=1200&auto=format&fit=crop') center/cover; 
+.commercial { 
+    background: linear-gradient(rgba(26, 34, 45, 0.4), rgba(26, 34, 45, 0.75)), 
+    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop') center/cover; 
 }
-.renewables { 
-    background: linear-gradient(rgba(15, 42, 74, 0.45), rgba(15, 42, 74, 0.7)), 
-    url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop') center/cover; 
+.industrial { 
+    background: linear-gradient(rgba(26, 34, 45, 0.4), rgba(26, 34, 45, 0.75)), 
+    url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1200&auto=format&fit=crop') center/cover; 
 }
 .op-info { padding: 30px; }
-.op-info h3 { color: var(--primary); margin-bottom: 12px; }
+.op-info h3 { color: var(--primary); margin-bottom: 12px; font-weight: 700; }
 
 /* ESG Framework Section */
 .esg-section { background-color: var(--light); padding: 100px 0; }
-.esg-text h2 { font-size: 2.5rem; color: var(--primary); margin: 15px 0 25px; }
+.esg-text h2 { font-size: 2.5rem; color: var(--primary); margin: 15px 0 25px; font-weight: 800; }
 .esg-list { list-style: none; margin-top: 30px; }
-.esg-list li { font-weight: 600; margin-bottom: 18px; display: flex; align-items: center; }
+.esg-list li { font-weight: 600; margin-bottom: 18px; display: flex; align-items: center; color: #3A4B5F; }
 .esg-list i { color: var(--accent-green); margin-right: 15px; font-size: 1.3rem; }
 .esg-visual {
-    background: linear-gradient(rgba(15,42,74,0.85), rgba(15,42,74,0.85)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop') center/cover;
-    border-radius: 8px; display: flex; align-items: flex-end; padding: 40px; color: white;
+    background: linear-gradient(rgba(26, 34, 45, 0.8), rgba(26, 34, 45, 0.8)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop') center/cover;
+    border-radius: 6px; display: flex; align-items: flex-end; padding: 40px; color: white;
 }
-.esg-graphic-box { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 25px; border-radius: 6px; border-left: 4px solid var(--accent-green); }
+.esg-graphic-box { background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); padding: 25px; border-radius: 6px; border-left: 4px solid var(--accent); }
 
-/* Procurement Layout Add-ons */
-.portal-hero { background: linear-gradient(135deg, #051324 0%, #15375e 100%); padding: 70px 0; color: var(--white); border-bottom: 3px solid var(--accent); }
-.portal-hero h1 { font-size: 2.6rem; margin: 15px 0; }
-.security-banner { background-color: #0b1a29; color: #a0aec0; padding: 12px 0; font-size: 0.85rem; font-weight: 600; }
+/* Procurement Portal Layout Setup */
+.portal-hero { background: linear-gradient(135deg, #090E14 0%, #1F2937 100%); padding: 70px 0; color: var(--white); border-bottom: 3px solid var(--accent); }
+.portal-hero h1 { font-size: 2.6rem; margin: 15px 0; font-weight: 800; }
+.security-banner { background-color: #0B0F14; color: #8A9BB0; padding: 12px 0; font-size: 0.85rem; font-weight: 600; }
 .secure-status i { color: #38a169; margin-right: 6px; }
 .compliance-tags { background-color: rgba(255, 255, 255, 0.05); padding: 4px 12px; border-radius: 4px; color: var(--white); }
 .tenders-section { padding: 60px 0; }
-.table-container { width: 100%; overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; border: 1px solid #e2e8f0; }
+.table-container { width: 100%; overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 6px; border: 1px solid #e2e8f0; }
 .tender-table { width: 100%; border-collapse: collapse; text-align: left; background: var(--white); font-size: 0.95rem; }
-.tender-table th { background-color: var(--primary); color: var(--white); padding: 16px 20px; }
+.tender-table th { background-color: var(--primary); color: var(--white); padding: 16px 20px; font-weight: 600; }
 .tender-table td { padding: 18px 20px; border-bottom: 1px solid #edf2f7; }
 .tender-ref { font-family: monospace; font-weight: 700; color: var(--primary); }
 .status-pill { padding: 4px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
-.status-pill.open { background-color: rgba(56, 161, 105, 0.15); color: #2f855a; }
+.status-pill.open { background-color: rgba(42, 126, 82, 0.15); color: #2A7E52; }
 
 .registration-section { background-color: var(--light); padding: 80px 0; }
-.registration-form-box { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+.registration-form-box { background: var(--white); padding: 40px; border-radius: 6px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
 .form-header { margin-bottom: 25px; border-bottom: 1px solid #edf2f7; padding-bottom: 15px; }
+.form-header h3 { color: var(--primary); font-weight: 800; }
 .form-row { margin-bottom: 20px; }
 .form-row.split { display: flex; gap: 20px; }
 .form-row.split .form-group { flex: 1; }
-.form-group label { display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 8px; }
-.form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 4px; background: #f8fafc; font-size: 0.95rem; }
-.btn-submit-secure { width: 100%; background-color: var(--primary); color: var(--white); padding: 15px; cursor: pointer; margin-top: 10px; }
+.form-group label { display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 8px; color: var(--primary); }
+.form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 4px; background: #f8fafc; font-size: 0.95rem; outline: none; }
+.form-group input:focus, .form-group select:focus { border-color: var(--accent); background: var(--white); }
+.btn-submit-secure { width: 100%; background-color: var(--primary); color: var(--white); padding: 15px; cursor: pointer; margin-top: 10px; font-weight: 700; }
+.btn-submit-secure:hover { background-color: var(--accent); color: var(--dark); }
 
 /* Footer Design modules */
-footer { background-color: var(--dark); color: var(--white); padding: 70px 0 30px; }
-footer h3 { color: var(--white); margin-bottom: 20px; }
-footer h4 { color: var(--accent); margin-bottom: 20px; }
-footer a { color: #a0aec0; text-decoration: none; display: block; margin-bottom: 12px; font-size: 0.95rem; }
+footer { background-color: var(--dark); color: var(--white); padding: 70px 0 30px; border-top: 4px solid var(--primary); }
+footer h3 { color: var(--white); margin-bottom: 20px; font-weight: 800; letter-spacing: 1px; }
+footer h4 { color: var(--accent); margin-bottom: 20px; font-weight: 700; }
+footer a { color: #8A9BB0; text-decoration: none; display: block; margin-bottom: 12px; font-size: 0.95rem; }
 footer a:hover { color: var(--white); }
-.footer-bottom { border-top: 1px solid #2d3748; margin-top: 50px; padding-top: 25px; color: #a0aec0; font-size: 0.9rem; }
+footer p { color: #8A9BB0; font-size: 0.95rem; }
+.footer-bottom { border-top: 1px solid #232C37; margin-top: 50px; padding-top: 25px; color: #8A9BB0; font-size: 0.9rem; }
 .socials a { font-size: 1.3rem; margin-left: 20px; color: var(--accent); }
