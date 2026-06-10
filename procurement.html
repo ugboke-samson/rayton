@@ -2,125 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subcontractor Tenders & Procurement | RAYTON</title>
+    <title>Subcontractor Tenders | RAYTON</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header class="main-header"><div class="container row"><div class="logo"><h2>RAYTON<span>CONSTRUCTION</span></h2></div><nav class="nav-menu"><a href="index.html">Home</a><a href="capabilities.html">Capabilities</a><a href="portfolio.html">Our Portfolio</a><a href="procurement.html" class="active">Tenders & Bidding</a></nav></div></header>
+    
+    <section class="subpage-header"><div class="container"><h1>Subcontractor Tender Platform</h1></div></section>
 
-    <header class="main-header">
-        <div class="container row">
-            <div class="logo">
-                <h2>RAYTON<span>CONSTRUCTION</span></h2>
-            </div>
-            <nav class="nav-menu">
-                <a href="index.html">Home</a>
-                <a href="#tenders">Active Tenders</a>
-                <a href="#register" class="btn btn-primary">Vendor Onboarding</a>
-            </nav>
-        </div>
-    </header>
-
-    <section class="portal-hero">
-        <div class="container">
-            <span class="badge">Supply Chain Integrity</span>
-            <h1>Subcontractor Procurement Portal</h1>
-            <p>Partnering with high-integrity material suppliers and specialized engineering firms to build safe global realities.</p>
-        </div>
-    </section>
-
-    <div class="security-banner">
-        <div class="container row">
-            <span class="secure-status"><i class="fa-solid fa-shield-halved"></i> Secure Vendor Allocation Network Architecture</span>
-            <span class="compliance-tags">ISO 27001 Protected</span>
-        </div>
-    </div>
-
-    <section id="tenders" class="tenders-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Open Project Tenders</h2>
-                <p>Submit competitive pricing bids for active structural material procurement demands.</p>
-            </div>
-            <div class="table-container">
-                <table class="tender-table">
-                    <thead>
-                        <tr>
-                            <th>Reference ID</th>
-                            <th>Project Tender Scope</th>
-                            <th>Job Location</th>
-                            <th>Closing Date</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="tender-ref">RT-2026-ST-991</td>
-                            <td><strong>Structural Reinforcement Steel Supply</strong><br><small>Procurement of 4,000 metric tons of anti-corrosive carbon rebar.</small></td>
-                            <td>Metropolitan Transit Hub</td>
-                            <td>July 24, 2026</td>
-                            <td><span class="status-pill open">Open</span></td>
-                        </tr>
-                        <tr>
-                            <td class="tender-ref">RT-2026-EL-402</td>
-                            <td><strong>HVAC & Intelligent Building Telemetry</strong><br><small>Integration contract for central eco-cooling systems.</small></td>
-                            <td>RAYTON Financial Tower</td>
-                            <td>August 11, 2026</td>
-                            <td><span class="status-pill open">Open</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <section id="register" class="registration-section">
-        <div class="container">
-            <div class="registration-form-box" style="max-width: 700px; margin: 0 auto;">
-                <div class="form-header">
-                    <h3>Subcontractor Prequalification Form</h3>
-                    <p>Provide registered company parameters to pass safety records screening.</p>
-                </div>
-                <form class="secure-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Registered Corporate Entity Name *</label>
-                            <input type="text" placeholder="e.g., Apex Structural Concrete Group" required>
-                        </div>
-                    </div>
-                    <div class="form-row split">
-                        <div class="form-group">
-                            <label>Commercial Operating License ID *</label>
-                            <input type="text" placeholder="Corporate registration number" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Trade Classification *</label>
-                            <select required>
-                                <option value="">-- Select Trade --</option>
-                                <option value="materials">Raw Materials & Concrete</option>
-                                <option value="mep">MEP & Electrical Subcontracting</option>
-                                <option value="heavyops">Heavy Machinery & Crane Lease</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Corporate Risk Officer Email *</label>
-                            <input type="email" placeholder="compliance@yourfirm.com" required>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-submit-secure"><i class="fa-solid fa-lock"></i> Send Prequalification Dossier</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container row footer-bottom">
-            <p>&copy; 2026 RAYTON Construction Group | Supply Chain Allocation Hub.</p>
-        </div>
-    </footer>
-
+    <section class="spec-container"><div class="container">
+        <table class="tender-table">
+            <thead><tr><th>Reference ID</th><th>Project Scope</th><th>Job Location</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>RT-2026-ST-991</td><td><strong>Structural Carbon Rebar Supply</strong></td><td>Metro Transit Center</td><td><span class="status-pill">Open</span></td></tr>
+                <tr><td>RT-2026-EL-402</td><td><strong>Central HVAC System Automation</strong></td><td>RAYTON Tower</td><td><span class="status-pill">Open</span></td></tr>
+            </tbody>
+        </table>
+    </div></section>
 </body>
 </html>
