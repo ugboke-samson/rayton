@@ -35,12 +35,25 @@ body { font-family: var(--font-stack); background: var(--white); color: var(--da
 .btn-secondary { border: 2px solid var(--white); color: var(--white); }
 .badge { background-color: rgba(229, 169, 60, 0.15); color: var(--accent); padding: 6px 16px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
 
-/* Clean Native HTML5 Background Video Rules */
-.hero.video-hero { position: relative; overflow: hidden; padding: 160px 0; min-height: 70vh; display: flex; align-items: center; }
-.video-background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-.video-background video { width: 100%; height: 100%; object-fit: cover; }
-.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(15,22,30,0.88) 0%, rgba(26,34,45,0.94) 100%); z-index: 2; }
-.hero-content { position: relative; z-index: 3; max-width: 750px; color: var(--white); }
+/* 100% Rock-Solid Stable Corporate Photo Hero Background Integration */
+.hero.image-hero { 
+    position: relative; 
+    padding: 160px 0; 
+    min-height: 70vh; 
+    display: flex; 
+    align-items: center;
+    /* High-end real corporate photograph link of structural engineers working on an active development layout */
+    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+/* The protective overlay shield: blends the picture into your corporate deep slate color theme */
+.hero-overlay { 
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%; 
+    background: linear-gradient(135deg, rgba(15,22,30,0.88) 0%, rgba(26,34,45,0.94) 100%); 
+    z-index: 1; 
+}
+.hero-content { position: relative; z-index: 2; max-width: 750px; color: var(--white); }
 .hero-content h1 { font-size: 3.5rem; margin: 20px 0; font-weight: 800; line-height: 1.15; letter-spacing: -1px; }
 .hero-content p { font-size: 1.2rem; color: #9BB0C7; margin-bottom: 40px; }
 .hero-buttons .btn { margin-right: 15px; }
