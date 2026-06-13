@@ -49,9 +49,10 @@ body { font-family: var(--pcl-font); background: var(--pcl-white); color: var(--
 .pcl-stage-content p { font-size: 1.3rem; line-height: 1.6; color: #E2E8F0; max-width: 800px; margin-bottom: 45px; font-weight: 300; }
 
 /* PCL Custom Action Buttons */
-.pcl-btn-fill { background-color: var(--pcl-yellow); color: var(--pcl-dark); padding: 16px 36px; font-weight: 800; text-transform: uppercase; text-decoration: none; display: inline-block; letter-spacing: 1px; font-size: 0.9rem; transition: all 0.3s ease; border-radius: 2px; }
+.pcl-btn-fill { background-color: var(--pcl-yellow); color: var(--pcl-dark); padding: 16px 36px; font-weight: 800; text-transform: uppercase; text-decoration: none; display: inline-block; letter-spacing: 1px; font-size: 0.9rem; transition: all 0.3s ease; border-radius: 2px; border: none; cursor: pointer; }
 .pcl-btn-fill i { margin-left: 10px; font-size: 0.8rem; }
-.pcl-btn-fill:hover { background-color: var(--pcl-white); color: var(--pcl-dark); }
+.pcl-btn-fill:hover { background-color: var(--pcl-dark); color: var(--pcl-white); box-shadow: 0 0 0 2px var(--pcl-yellow); }
+.pcl-btn-fill.small-btn { padding: 12px 24px; font-size: 0.8rem; margin-top: 15px; }
 .pcl-btn-outline { border: 2px solid var(--pcl-white); color: var(--pcl-white); padding: 14px 36px; font-weight: 800; text-transform: uppercase; text-decoration: none; display: inline-block; letter-spacing: 1px; font-size: 0.9rem; margin-left: 20px; transition: all 0.3s ease; border-radius: 2px; }
 .pcl-btn-outline:hover { background-color: var(--pcl-white); color: var(--pcl-dark); }
 
@@ -66,41 +67,105 @@ body { font-family: var(--pcl-font); background: var(--pcl-white); color: var(--
 .card-lbl { display: block; font-size: 0.9rem; font-weight: 700; color: var(--pcl-white); text-transform: uppercase; letter-spacing: 0.5px; }
 .card-lbl i { font-size: 0.75rem; margin-left: 5px; color: var(--pcl-gray); }
 
-/* PCL Segmented Markets Workspace Grid */
-.pcl-expertise-section { padding: 110px 0; background-color: var(--pcl-light); }
-.pcl-section-title { margin-bottom: 60px; }
+/* ==========================================================================
+   NEW: ELITE IN-PAGE TAB DISPLAY SYSTEM COMPONENT STYLES
+   ========================================================================== */
+.pcl-tabs-section { padding: 100px 0; background-color: var(--pcl-white); }
+.pcl-section-title { margin-bottom: 45px; }
 .pcl-section-title h2 { font-size: 2.6rem; font-weight: 900; text-transform: uppercase; color: var(--pcl-dark); letter-spacing: -1px; }
+.pcl-section-title p { color: var(--pcl-gray); font-size: 1.1rem; max-width: 800px; margin-top: 10px; }
 .accent-bar { width: 80px; height: 5px; background-color: var(--pcl-yellow); margin-top: 15px; }
-.pcl-expert-card { background: var(--pcl-white); border-radius: 0; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.04); border: 1px solid #E2E8F0; }
-.card-frame { height: 240px; }
-.card-frame.civic { background: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600') center/cover no-repeat; }
-.card-frame.commercial { background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600') center/cover no-repeat; }
-.card-frame.industrial { background: url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600') center/cover no-repeat; }
-.card-body { padding: 35px; }
-.card-body h3 { font-size: 1.4rem; font-weight: 800; color: var(--pcl-dark); margin-bottom: 12px; text-transform: uppercase; letter-spacing: -0.3px; }
-.card-body p { color: #4A5568; font-size: 1rem; line-height: 1.6; margin-bottom: 25px; }
-.card-link { font-size: 0.85rem; font-weight: 800; color: var(--pcl-dark); text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.2s; }
-.card-link i { margin-left: 6px; font-size: 0.8rem; transition: transform 0.2s; }
-.card-link:hover { color: var(--pcl-yellow); }
-.card-link:hover i { transform: translateX(4px); }
 
-/* Subpage Corporate Workspaces Framework layouts */
-.pcl-subpage-hero { background-color: var(--pcl-dark); padding: 90px 0; border-bottom: 5px solid var(--pcl-yellow); color: var(--pcl-white); }
-.pcl-subpage-hero h1 { font-size: 3rem; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
-.pcl-workspace { padding: 100px 0; background: var(--pcl-white); }
-.pcl-workspace-grid { display: grid; grid-template-columns: 2.2fr 1fr; gap: 50px; }
-.pcl-audit-panel { background: var(--pcl-white); }
-.pcl-audit-panel h2 { font-size: 2.2rem; font-weight: 900; text-transform: uppercase; margin-bottom: 25px; letter-spacing: -0.5px; }
-.pcl-audit-panel p { font-size: 1.1rem; line-height: 1.7; color: #2D3748; margin-bottom: 25px; }
-.pcl-node-stack { margin-top: 40px; display: flex; flex-direction: column; gap: 25px; }
-.pcl-node { background-color: var(--pcl-light); padding: 30px; border-left: 4px solid var(--pcl-dark); }
-.pcl-node h4 { font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; }
-.pcl-node p { font-size: 0.95rem; color: #4A5568; margin: 0; line-height: 1.5; }
-.pcl-sidebar-widget { background-color: var(--pcl-dark); color: var(--pcl-white); padding: 35px; border-radius: 0; margin-bottom: 30px; }
-.pcl-sidebar-widget h3 { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid var(--pcl-panel); padding-bottom: 10px; letter-spacing: 0.5px; }
-.pcl-sidebar-widget ul { list-style: none; }
-.pcl-sidebar-widget ul li { margin-bottom: 15px; font-size: 0.95rem; font-weight: 600; color: #CBD5E0; }
-.pcl-sidebar-widget ul li i { color: var(--pcl-yellow); margin-right: 12px; }
+/* The horizontal structural button line */
+.pcl-tab-navigation-strip { 
+    display: flex; 
+    border-bottom: 3px solid #E2E8F0; 
+    margin-bottom: 45px;
+    gap: 5px;
+}
+.tab-control-btn { 
+    background: none; 
+    border: none; 
+    padding: 18px 30px; 
+    font-size: 1rem; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    color: var(--pcl-gray); 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    position: relative;
+    letter-spacing: 0.5px;
+}
+.tab-control-btn i { margin-right: 10px; font-size: 1.1rem; }
+.tab-control-btn:hover { color: var(--pcl-dark); background-color: var(--pcl-light); }
+
+/* The active state: colors the text dark and adds the PCL yellow bar directly underneath */
+.tab-control-btn.active { 
+    color: var(--pcl-dark); 
+}
+.tab-control-btn.active::after { 
+    content: ''; 
+    position: absolute; 
+    bottom: -3px; left: 0; 
+    width: 100%; height: 4px; 
+    background-color: var(--pcl-dark); 
+}
+
+/* Tab Content Display Modules */
+.pcl-tab-content-panel { 
+    display: none; /* Hidden completely by default */
+    animation: fadeFrameIn 0.4s ease-out forwards;
+}
+.pcl-tab-content-panel.active { 
+    display: block; /* Switches on smoothly when toggle is pressed */
+}
+
+/* Inner Layout Container Grid */
+.tab-layout-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    background-color: #FAFBFD;
+    border: 1px solid #E2E8F0;
+    padding: 40px;
+}
+.tab-visual-showcase { 
+    height: 350px; 
+    position: relative; 
+}
+/* Individual high-end backgrounds loaded contextually into tabs */
+.civic-bg { background: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=700') center/cover; }
+.commercial-bg { background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=700') center/cover; }
+.industrial-bg { background: url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=700') center/cover; }
+
+.visual-tint-shield { 
+    position: absolute; top:0; left:0; width:100%; height:100%; 
+    background: linear-gradient(to top, rgba(17,20,26,0.9) 0%, rgba(17,20,26,0.2) 100%); 
+    padding: 35px; display: flex; flex-direction: column; justify-content: flex-end;
+}
+.panel-tag { color: var(--pcl-yellow); font-weight: 800; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 8px; }
+.visual-tint-shield h3 { color: var(--pcl-white); font-size: 1.6rem; font-weight: 900; text-transform: uppercase; line-height: 1.2; }
+
+.tab-data-profile { display: flex; flex-direction: column; justify-content: center; }
+.tab-data-profile h3 { font-size: 1.8rem; font-weight: 900; text-transform: uppercase; margin-bottom: 15px; letter-spacing: -0.5px; }
+.tab-data-profile p { color: #4A5568; font-size: 1.05rem; line-height: 1.65; margin-bottom: 30px; }
+
+/* Segmented Sub-Matrix Metrics Inside Tabs */
+.tab-matrix-stats { 
+    display: flex; 
+    gap: 40px; 
+    margin-bottom: 30px; 
+    border-top: 1px solid #E2E8F0; 
+    padding-top: 20px;
+}
+.matrix-stat-item strong { display: block; font-size: 1.8rem; font-weight: 900; color: var(--pcl-dark); line-height: 1; }
+.matrix-stat-item small { display: block; font-size: 0.8rem; font-weight: 700; color: var(--pcl-gray); text-transform: uppercase; margin-top: 5px; letter-spacing: 0.5px; }
+
+/* Entry Keyframe Micro-Animation */
+@keyframes fadeFrameIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /* PCL Deep Charcoal Heavy Corporate Footer Grid */
 .pcl-footer { background-color: #0B0D11; color: var(--pcl-white); padding: 90px 0 60px; border-top: 5px solid var(--pcl-dark); }

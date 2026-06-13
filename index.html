@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- PCL Minimalist Top Utility Grid -->
     <div class="pcl-utility-strip">
         <div class="pcl-container row">
             <div class="strip-ticker">
@@ -21,6 +22,7 @@
         </div>
     </div>
 
+    <!-- PCL Signature High-Contrast Navbar -->
     <header class="pcl-navbar">
         <div class="pcl-container row">
             <div class="pcl-brand">
@@ -36,6 +38,7 @@
         </div>
     </header>
 
+    <!-- PCL Massive Premium Fullscreen Stage Hero Grid -->
     <section class="pcl-stage-hero">
         <div class="pcl-stage-overlay"></div>
         <div class="pcl-container pcl-stage-content">
@@ -49,6 +52,7 @@
         </div>
     </section>
 
+    <!-- PCL Signature Sleek Analytics Metrics Matrix -->
     <section class="pcl-matrix-section">
         <div class="pcl-container">
             <div class="matrix-headline">
@@ -76,41 +80,121 @@
         </div>
     </section>
 
-    <section class="pcl-expertise-section">
+    <!-- ==========================================================================
+         NEW: INDUSTRIAL ENTERPRISE IN-PAGE TABS INTERACTIVE SYSTEM
+         ========================================================================== -->
+    <section class="pcl-tabs-section">
         <div class="pcl-container">
             <div class="pcl-section-title">
-                <h2>Markets We Serve</h2>
+                <h2>Markets & Structural Specializations</h2>
+                <p>Select a sector segment tab to view engineering blueprints, machinery allocation parameters, and active field operations data.</p>
                 <div class="accent-bar"></div>
             </div>
-            <div class="pcl-grid pcl-grid-3">
-                <div class="pcl-expert-card">
-                    <div class="card-frame civic"></div>
-                    <div class="card-body">
-                        <h3>Civil Infrastructure</h3>
-                        <p>Constructing high-capacity highway grids, pre-stressed bridges, and mass transit corridors.</p>
-                        <a href="cap-civil.html" class="card-link">View Market Profile <i class="fa-solid fa-arrow-right"></i></a>
+
+            <!-- The Tab Click Control Strip -->
+            <div class="pcl-tab-navigation-strip">
+                <button class="tab-control-btn active" onclick="switchIndustrialTab(event, 'tab-civil')">
+                    <i class="fa-solid fa-bridge"></i> Civil Infrastructure
+                </button>
+                <button class="tab-control-btn" onclick="switchIndustrialTab(event, 'tab-commercial')">
+                    <i class="fa-solid fa-building"></i> Commercial Landmarks
+                </button>
+                <button class="tab-control-btn" onclick="switchIndustrialTab(event, 'tab-industrial')">
+                    <i class="fa-solid fa-industry"></i> Heavy Industrial
+                </button>
+            </div>
+
+            <!-- Tab Panel 1: Civil -->
+            <div id="tab-civil" class="pcl-tab-content-panel active">
+                <div class="tab-layout-grid">
+                    <div class="tab-visual-showcase civic-bg">
+                        <div class="visual-tint-shield">
+                            <span class="panel-tag">Division Asset Profile</span>
+                            <h3>Heavy Logistics & Civic Foundation Frameworks</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="pcl-expert-card">
-                    <div class="card-frame commercial"></div>
-                    <div class="card-body">
-                        <h3>Commercial Landmarks</h3>
-                        <p>Delivering premium high-rise corporate towers, luxury multi-use blocks, and district workspaces.</p>
-                        <a href="cap-commercial.html" class="card-link">View Market Profile <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="pcl-expert-card">
-                    <div class="card-frame industrial"></div>
-                    <div class="card-body">
-                        <h3>Heavy Industrial</h3>
-                        <p>Engineering massive oil & gas platforms, petrochemical installations, and advanced refining arrays.</p>
-                        <a href="cap-industrial.html" class="card-link">View Market Profile <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="tab-data-profile">
+                        <h3>Civil Infrastructure Execution</h3>
+                        <p>RAYTON constructs resilient transit infrastructure designed for century-long lifespans. We anchor municipal growth structures using high-precision deep foundation stabilization frameworks.</p>
+                        
+                        <div class="tab-matrix-stats">
+                            <div class="matrix-stat-item">
+                                <strong>$120M+</strong>
+                                <small>Machinery Asset Pool</small>
+                            </div>
+                            <div class="matrix-stat-item">
+                                <strong>ISO 9001</strong>
+                                <small>Quality Verified</small>
+                            </div>
+                        </div>
+
+                        <a href="cap-civil.html" class="pcl-btn-fill small-btn">Open Full Civil Directory <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
+
+            <!-- Tab Panel 2: Commercial -->
+            <div id="tab-commercial" class="pcl-tab-content-panel">
+                <div class="tab-layout-grid">
+                    <div class="tab-visual-showcase commercial-bg">
+                        <div class="visual-tint-shield">
+                            <span class="panel-tag">Architectural Real Estate</span>
+                            <h3>High-Rise Steel Structural Deflection Profiles</h3>
+                        </div>
+                    </div>
+                    <div class="tab-data-profile">
+                        <h3>Commercial Landmarks Division</h3>
+                        <p>We translate complex high-rise blueprints into glass-and-steel commercial centers. Our structures integrate intelligent building systems and composite core layouts designed for supreme structural stability.</p>
+                        
+                        <div class="tab-matrix-stats">
+                            <div class="matrix-stat-item">
+                                <strong>42</strong>
+                                <small>Towers Handed Over</small>
+                            </div>
+                            <div class="matrix-stat-item">
+                                <strong>-40%</strong>
+                                <small>HVAC Energy Loading</small>
+                            </div>
+                        </div>
+
+                        <a href="cap-commercial.html" class="pcl-btn-fill small-btn">Open Commercial Specs <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Panel 3: Industrial -->
+            <div id="tab-industrial" class="pcl-tab-content-panel">
+                <div class="tab-layout-grid">
+                    <div class="tab-visual-showcase industrial-bg">
+                        <div class="visual-tint-shield">
+                            <span class="panel-tag">High-Stress Engineering</span>
+                            <h3>Vibration-Isolated Dynamic Heavy machine Foundations</h3>
+                        </div>
+                    </div>
+                    <div class="tab-data-profile">
+                        <h3>Heavy Industrial Systems</h3>
+                        <p>Engineering robust processing installations, high-volume refineries, and advanced logistics hubs. Built to survive extreme vibration and harsh weather profiles using thick reinforced concrete slabs.</p>
+                        
+                        <div class="tab-matrix-stats">
+                            <div class="matrix-stat-item">
+                                <strong>90+</strong>
+                                <small>Plants Commissioned</small>
+                            </div>
+                            <div class="matrix-stat-item">
+                                <strong>Blast-Proof</strong>
+                                <small>Reinforced Firewalls</small>
+                            </div>
+                        </div>
+
+                        <a href="cap-industrial.html" class="pcl-btn-fill small-btn">Open Industrial Directory <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- PCL Deep Black Heavy-Industrial Footer -->
     <footer class="pcl-footer">
         <div class="pcl-container pcl-grid pcl-grid-4">
             <div class="footer-summary">
@@ -136,7 +220,7 @@
         </div>
         <div class="pcl-footer-base">
             <div class="pcl-container row">
-                <p>&copy; 2026 RAYTON Construction Group. All rights reserved. Calibrated for Global Asset Delivery.</p>
+                <p>&copy; 2026 RAYTON Construction Group. All rights reserved.</p>
                 <div class="footer-socials">
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -144,6 +228,29 @@
             </div>
         </div>
     </footer>
+
+    <!-- Light, Lightning-Fast Tab Switching Logic -->
+    <script>
+        function switchIndustrialTab(event, targetTabId) {
+            // 1. Hide all existing tab content panels safely
+            const contentPanels = document.getElementsByClassName('pcl-tab-content-panel');
+            for (let panel of contentPanels) {
+                panel.classList.remove('active');
+            }
+
+            // 2. Remove the yellow active outline from all tab layout navigation buttons
+            const tabButtons = document.getElementsByClassName('tab-control-btn');
+            for (let button of tabButtons) {
+                button.classList.remove('active');
+            }
+
+            // 3. Show the requested active data container layout panel
+            document.getElementById(targetTabId).classList.add('active');
+
+            // 4. Highlight the currently pressed button layout state
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
