@@ -178,3 +178,10 @@ body { font-family: var(--pcl-font); background: var(--pcl-white); color: var(--
 .pcl-footer-base { background-color: #07080A; color: rgba(255,255,255,0.25); padding: 25px 0; font-size: 0.85rem; font-weight: 500; border-top: 1px solid rgba(255,255,255,0.03); }
 .footer-socials a { color: var(--pcl-gray); font-size: 1.1rem; margin-left: 25px; transition: color 0.2s; }
 .footer-socials a:hover { color: var(--pcl-yellow); }
+/* Custom Logo Positioning Sizer */
+.pcl-custom-logo {
+    max-height: 42px;    /* Perfectly scales the image to match PCL's navbar layout */
+    width: auto;         /* Prevents your logo graphic from stretching sideways */
+    display: block;
+    object-fit: contain;
+}
